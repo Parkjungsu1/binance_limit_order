@@ -1,8 +1,7 @@
-# binance_limit_order
-
 # 🚀 Binance Limit Order Trading App
 
 desktop trading application for Binance Futures
+that prioritizes **limit orders over market orders** using real-time data.
 
 ## Features
 
@@ -17,7 +16,7 @@ desktop trading application for Binance Futures
 - PyQt5
 - Binance Futures API
 - WebSocket
-- REST API (Upbit)
+- REST API
 
 ## ⚙️ Setup
 
