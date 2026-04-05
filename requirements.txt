@@ -1,0 +1,4 @@
+python-binance
+websocket-client
+PyQt5
+keyring
