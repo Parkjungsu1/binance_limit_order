@@ -69,12 +69,13 @@ class MainWindow(QWidget):
         print(f"\n[청산 요청] {symbol} | 포지션: {side}")
         
         if side == "LONG":
-            print(f"-> {symbol} 매도(Sell) API 호출 준비 중...")
-            # self.order_manager.close_long(symbol)
+            order_side = "SELL"
         else:
-            print(f"-> {symbol} 매수(Buy) API 호출 준비 중...")
-            # self.order_manager.close_short(symbol)
+            order_side = "BUY"
 
+        result = self.order_manager._close_position(symbol, order_side)
+        if result:
+            self.load_positions()
 
     def update_price(self, symbol, price):
         if symbol not in self.positions:
