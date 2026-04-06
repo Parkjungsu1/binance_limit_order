@@ -28,7 +28,7 @@ Binance USDT-M Futures has the following basic fee structure:
 ## ⚙️ Setup
 
 ```bash
-git clone https://github.com/your-repo/binance_limit_order.git
+git clone https://github.com/Parkjungsu1/binance_limit_order.git
 cd binance_limit_order
 
 python -m venv venv
